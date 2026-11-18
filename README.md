@@ -11,16 +11,15 @@ We test three popular OCR engines against a messy, low-quality Walgreens receipt
 
 ---
 
-## ⚙️ Installation
+### ⚙️ Installation
 
 **1. Clone the repository:**
-```bash
+
 git clone [https://github.com/YOUR_USERNAME/ocr-engine-benchmark.git](https://github.com/YOUR_USERNAME/ocr-engine-benchmark.git)
 cd ocr-engine-benchmark
 
 **2. Install Python dependencies:**
-```bash
-pip install -r requirements.txt
+pip install -r requirements.txt```
 
 **3. Install Tesseract OS Engine:Note: PyTesseract requires the actual Tesseract software installed on your machine.**
 
@@ -30,11 +29,14 @@ Mac: brew install tesseract
 
 Linux (Ubuntu): sudo apt install tesseract-ocr
 
+---
+
 **🚀 How to Run the Benchmark**
 Simply run the Python script. It will automatically download the sample receipt image and run all three engines back-to-back.
 
-Bash
 python ocr.py
+
+---
 
 **📊 The Takeaway for AI Builders**
 Fast doesn't mean good. If you are building a Retrieval-Augmented Generation (RAG) pipeline, passing fast but hallucinated OCR data into your LLM will poison your context window. A slower, layout-aware engine like Docling ensures your agent actually gets the right numbers.
