@@ -1,0 +1,5 @@
+rich
+pytesseract
+Pillow
+easyocr
+docling
